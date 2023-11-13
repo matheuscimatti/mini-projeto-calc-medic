@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 99vh;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: small;
+    color: rgb(212, 62, 62);
+}
+
+.disp,
+.presc {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.fundo {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 400px;
+    height: 50vh;
+    border-radius: 25px;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 600px; /* Ajuste conforme necessário */
+    height: auto; /* Alteração para height: auto */
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+label {
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+input[type="number"] {
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+select {
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnCalc {
+    font-size: 20px;
+    background-color: rgb(27, 207, 27);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 110px;
+    height: 40px;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+#btnCalc:hover {
+    cursor: pointer;
+    background-color: rgb(57, 227, 57);
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#btnCalc:active {
+    background-color: rgb(27, 177, 27);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+}
+
+#resultado {
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .fundo {
+        width: 80vw;
+    }
+
+
+    #btnCalc {
+        width: 100%;
+    }
+}

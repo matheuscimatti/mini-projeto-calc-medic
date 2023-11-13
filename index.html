@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de Medicamentos">
+    <meta name="author" content="Your Name">
+    <title>Calcular Medicamentos</title>
+    <link rel="shortcut icon" href="remedio.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="titulo">
+            <h1>Calculadora de<br>Medicamentos</h1>
+        </div>
+        <label for="massaDisp">Dosagem do Medicamento: </label>
+        <div class="disp">
+            <input type="number" name="massaDisp" id="massaDisp" placeholder="0" step="0.001">
+            <select name="selectMDisp" id="selectMDisp">
+                <option value="mg">mg</option>
+                <option value="mcg">mcg</option>
+                <option value="g">g</option>
+            </select>
+            por
+            <input type="number" name="volDisp" id="volDisp" value="1" step="0.01">
+            <select name="selectVDisp" id="selectVDisp">
+                <option value="ml">ml</option>
+                <option value="l">l</option>
+            </select>
+        </div>
+        <label for="massaPresc">Prescrito: </label>
+        <div class="presc">
+            <input type="number" name="massaPresc" id="massaPresc" placeholder="0" step="0.001">
+            <select name="selectMPresc" id="selectMPresc">
+                <option value="mg">mg</option>
+                <option value="mcg">mcg</option>
+                <option value="g">g</option>
+            </select>
+        </div>
+        <div class="botao">
+            <input type="button" id="btnCalc" value="Calcular" onclick="calcular()">
+        </div>
+        <div id="resultado"></div>
+    </div>
+</body>
+<script src="funcoes.js"></script>
+
+</html>
