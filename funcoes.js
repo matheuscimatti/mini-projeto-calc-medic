@@ -41,8 +41,22 @@ function calcular() {
         default:
             console.log("Opção inválida");
     }
+    let mlQtd = document.getElementById("qtdAmpola").value;
+    let unidQtd = document.getElementById("selectQtd").value;
+    switch (unidQtd) {
+        case "ml":
+            mlQtd = mlQtd;
+            break;
+        case "l":
+            mlQtd = mlQtd * 1000;
+            break;
+        default:
+            console.log("Opção inválida");
+    }
     let mlUsado = (mgPres * mlDos) / mgDos;
     mlUsado = ((mlUsado - Math.floor(mlUsado) > 0) ? mlUsado.toPrecision(2) : mlUsado);
+    let qtdUsada = mlUsado / mlQtd;
+    qtdUsada = ((qtdUsada - Math.floor(qtdUsada) > 0) ? qtdUsada.toPrecision(2) : qtdUsada);
     let resultado = document.getElementById("resultado");
-    resultado.innerHTML = "<p>A quantidade utilizada foi de <strong>" + mlUsado + "</strong> ml.</p>";
+    resultado.innerHTML = "<p>A quantidade utilizada foi de <strong>" + mlUsado + "</strong> ml. Equivalente a <strong>" + qtdUsada + "</strong> do frasco.</p>";
 }

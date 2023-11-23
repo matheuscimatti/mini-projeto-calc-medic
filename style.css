@@ -17,7 +17,8 @@ body {
 }
 
 .disp,
-.presc {
+.presc,
+.quantidade {
     padding-top: 5px;
     padding-bottom: 15px;
 }
@@ -26,16 +27,10 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80vw;
-    max-width: 400px;
-    height: 50vh;
-    border-radius: 25px;
-    padding: 20px;
-
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80vw;
-    max-width: 600px; /* Ajuste conforme necessário */
-    height: auto; /* Alteração para height: auto */
+    max-width: 600px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    /* Alteração para height: auto */
     border-radius: 25px;
     padding: 20px;
     box-sizing: border-box;
@@ -46,6 +41,10 @@ label {
     font-weight: bold;
 }
 
+#por {
+    color: black;
+    font-weight: normal;
+}
 
 input[type="number"] {
     width: 40px;
@@ -53,6 +52,14 @@ input[type="number"] {
     border-radius: 5px;
     border-style: none;
     font-size: 15px;
+}
+
+#volDisp {
+    width: 35px;
+}
+
+#selectVDisp {
+    width: 37px;
 }
 
 select {
@@ -109,8 +116,44 @@ select {
         width: 80vw;
     }
 
+    .titulo {
+        font-size: x-small;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input[type="number"] {
+        width: 30px;
+        height: 18px;
+        font-size: 13px;
+    }
+
+    #volDisp {
+        width: 23px;
+    }
+
+    #selectVDisp {
+        width: 25px;
+    }
+
+    select {
+        width: 35px;
+        height: 20px;
+        padding: 0 3px;
+        font-size: 13px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
 
     #btnCalc {
         width: 100%;
+    }
+
+    #resultado {
+        padding-top: 10px;
+        font-size: 15px;
     }
 }

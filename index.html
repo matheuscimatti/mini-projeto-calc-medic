@@ -24,9 +24,17 @@
                 <option value="mcg">mcg</option>
                 <option value="g">g</option>
             </select>
-            por
-            <input type="number" name="volDisp" id="volDisp" value="1" step="0.01">
+            <label id="por">por</label>
+            <input type="number" name="volDisp" id="volDisp" value="1" step="0.1">
             <select name="selectVDisp" id="selectVDisp">
+                <option value="ml">ml</option>
+                <option value="l">l</option>
+            </select>
+        </div>
+        <label for="qtdAmpola">Qtd. em um frasco: </label>
+        <div class="quantidade">
+            <input type="number" name="qtdAmpola" id="qtdAmpola" placeholder="0" step="0.01">
+            <select name="selectQtd" id="selectQtd">
                 <option value="ml">ml</option>
                 <option value="l">l</option>
             </select>
